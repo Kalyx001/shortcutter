@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clipify - YouTube Shorts Cutter</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Clipify</h1>
+    <p>Cut YouTube videos into Shorts easily!</p>
+
+    <form id="clip-form">
+      <input type="url" id="yt-url" placeholder="Paste YouTube link" required>
+      <input type="text" id="start-time" placeholder="Start time (e.g. 00:00:10)" required>
+      <input type="text" id="end-time" placeholder="End time (e.g. 00:00:30)" required>
+      <button type="submit">Cut My Clip</button>
+    </form>
+
+    <div id="loading" class="hidden">⏳ Processing video, please wait...</div>
+    <div id="result"></div>
+  </div>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
